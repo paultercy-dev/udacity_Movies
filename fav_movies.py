@@ -1,6 +1,7 @@
-import fresh_tomatoes
-import media
+import fresh_tomatoes #file that renders a html of movie
+import media #import class Movie
 
+#Movies that will be displayed in the html file
 Harry_Potter = media.Movie("Harry Potter and the Goblet of Fire",
 	"The story followsHarry Potter's fourth year at Hogwarts as he is chosen by the Goblet of Fire to compete in the Triwizard Tournament.",
 	"http://www.wichitaorpheum.com/wp-content/uploads/2013/05/Harry-Potter-and-the-Goblet-of-Fire-movie-poster.jpg",
@@ -27,4 +28,5 @@ Legend = media.Movie("I Am Legend",
 	"https://www.youtube.com/watch?v=ewpYq9rgg3w")
 
 movies = [Harry_Potter, Chappie, Air_Force_One, Jurassic_World, Legend, Star_Trek_Beyond]
+#takes array of movies so fresh_tomatoes class can render the html file
 fresh_tomatoes.open_movies_page(movies)
